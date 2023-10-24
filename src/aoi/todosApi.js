@@ -9,12 +9,12 @@ const todosApi = axios.create({
 console.log(todosApi);
 
 export const todosUrlEndpoint = "/todos";
-
+// GET ALL DATA FROM OUR HTTP://LOCALHOST:3000/POST
 export const getTodos = async () => {
   const response = await todosApi.get(todosUrlEndpoint);
   return response.data;
 };
-
+// ADD TODOS
 export const addTodo = async ({ userId, title, completed }) => {
   const response = await todosApi.post(todosUrlEndpoint, {
     userId,
