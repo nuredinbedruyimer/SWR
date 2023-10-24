@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+ 
+}
+
+input[type="text"],
+button {
+  font: inherit;
+}
+
+
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+
+
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 1rem;
+}
+
+
+
+
+form {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #18181B;
+  margin-bottom: 1rem;
+}
+
+form label {
+  position: absolute;
+  left: -10000px;
+}
+
+.new-todo {
+  width: 100%;
+  padding-right: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid #18181B;
+}
+
+.submit {
+  background-color: #F8FAFC;
+  color: gray;
+}
+
+.submit:focus,
+.submit:hover {
+  background-color: limegreen;
+  color: #F8FAFC;
+}
